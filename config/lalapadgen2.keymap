@@ -71,8 +71,8 @@
 &mt2 LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B                                          &kp N          &kp M     &kp COMMA      &kp PERIOD  &kp SLASH
 &kp LCTRL          &kp LEFT_ALT  &kp LC(UP)    &mo 2          &kp LEFT_WIN  &kp SPACE             &kp ENTER  &kp BACKSPACE  &mo 3     &kp LA(SPACE)  &kp DEL     &to 1
                    &kp C_MUTE    &kp RIGHT     &kp C_VOL_DN   &kp LEFT      &kp C_VOL_UP          &kp UP     &kp LEFT       &kp DOWN  &kp RIGHT      &none
-&mkp LCLK          &mkp RCLK     &mkp MCLK                                                                                        &mkp LCLK      &mkp RCLK   &mkp MCLK
-&mkp MB4           &mkp MB5      &kp LG(TAB)   &kp LG(D)      &kp LCTRL                                      &mkp MB4       &mkp MB5  &kp LG(TAB)    &kp LG(D)   &kp LCTRL
+&mkp LCLK          &mkp RCLK     &mkp MCLK                                                                                            &mkp LCLK      &mkp RCLK   &mkp MCLK
+&mkp MB4           &mkp MB5      &kp LC(UP)    &kp LG(F3)     &kp LEFT_WIN                                   &mkp MB4       &mkp MB5  &kp LC(UP)     &kp LG(F3)  &kp LEFT_WIN
             >;
         };
 
