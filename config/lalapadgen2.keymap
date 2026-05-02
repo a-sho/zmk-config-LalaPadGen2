@@ -78,26 +78,26 @@
         DEFAULT_MAC_LAYER {
             display-name = "Default_for_Mac";
             bindings = <
-&kp Q              &kp W         &kp E       &kp R         &kp T                                  &kp Y          &kp U     &kp I          &kp O            &kp P
-&kp A              &kp S         &kp D       &kp F         &kp G                                  &kp H          &kp J     &kp K          &kp L            &mt2 EQUAL MINUS
-&mt2 LEFT_SHIFT Z  &kp X         &kp C       &kp V         &kp B                                  &kp N          &kp M     &kp COMMA      &kp PERIOD       &kp SLASH
-&kp LCTRL          &kp LEFT_ALT  &kp LC(UP)  &mo 2         &kp LEFT_WIN  &kp SPACE     &kp ENTER  &kp BACKSPACE  &mo 3     &kp LA(SPACE)  &kp RIGHT_SHIFT  &to 1
-                   &kp C_MUTE    &kp RIGHT   &kp C_VOL_DN  &kp LEFT      &kp C_VOL_UP  &kp UP     &kp LEFT       &kp DOWN  &kp RIGHT      &none
+&kp Q              &kp W         &kp E       &kp R         &kp T                                  &kp Y     &kp U          &kp I          &kp O            &kp P
+&kp A              &kp S         &kp D       &kp F         &kp G                                  &kp H     &kp J          &kp K          &kp L            &mt2 EQUAL MINUS
+&mt2 LEFT_SHIFT Z  &kp X         &kp C       &kp V         &kp B                                  &kp N     &kp M          &kp COMMA      &kp PERIOD       &kp SLASH
+&kp LCTRL          &kp LEFT_ALT  &kp LC(UP)  &kp LEFT_WIN  &mo 2         &kp SPACE     &kp ENTER  &mo 3     &kp BACKSPACE  &kp LA(SPACE)  &kp RIGHT_SHIFT  &kp BACKSLASH
+                   &kp C_MUTE    &kp RIGHT   &kp C_VOL_DN  &kp LEFT      &kp C_VOL_UP  &kp UP     &kp LEFT  &kp DOWN       &kp RIGHT      &none
 &mkp LCLK          &mkp RCLK     &mkp MCLK                                                                                 &mkp LCLK      &mkp RCLK        &mkp MCLK
-&mkp MB4           &mkp MB5      &kp LC(UP)  &kp F11       &kp LEFT_WIN                           &mkp MB4       &mkp MB5  &kp LC(UP)     &kp LG(F11)      &kp LEFT_WIN
+&mkp MB4           &mkp MB5      &kp LC(UP)  &kp F11       &kp LEFT_WIN                           &mkp MB4  &mkp MB5       &kp LC(UP)     &kp LG(F11)      &kp LEFT_WIN
             >;
         };
 
         DEFAULT_WIN_LAYER {
             display-name = "Default_for_Win";
             bindings = <
-&kp Q              &kp W         &kp E           &kp R         &kp T                               &kp Y          &kp U     &kp I           &kp O            &kp P
-&kp A              &kp S         &kp D           &kp F         &kp G                               &kp H          &kp J     &kp K           &kp L            &mt2 EQUAL MINUS
-&mt2 LEFT_SHIFT Z  &kp X         &kp C           &kp V         &kp B                               &kp N          &kp M     &kp COMMA       &kp PERIOD       &kp SLASH
-&kp LEFT_WIN       &kp LEFT_ALT  &kp LANGUAGE_1  &mo 2         &kp LCTRL  &kp SPACE     &kp ENTER  &kp BACKSPACE  &mo 3     &kp LANGUAGE_2  &kp RIGHT_SHIFT  &to 0
-                   &kp C_MUTE    &kp RIGHT       &kp C_VOL_DN  &kp LEFT   &kp C_VOL_UP  &kp UP     &kp LEFT       &kp DOWN  &kp RIGHT       &kp LA(F4)
+&kp Q              &kp W         &kp E           &kp R         &kp T                               &kp Y     &kp U          &kp I           &kp O            &kp P
+&kp A              &kp S         &kp D           &kp F         &kp G                               &kp H     &kp J          &kp K           &kp L            &mt2 EQUAL MINUS
+&mt2 LEFT_SHIFT Z  &kp X         &kp C           &kp V         &kp B                               &kp N     &kp M          &kp COMMA       &kp PERIOD       &kp SLASH
+&kp LEFT_WIN       &kp LEFT_ALT  &kp LANGUAGE_1  &kp LCTRL     &mo 2      &kp SPACE     &kp ENTER  &mo 3     &kp BACKSPACE  &kp LANGUAGE_2  &kp RIGHT_SHIFT  &kp BACKSLASH
+                   &kp C_MUTE    &kp RIGHT       &kp C_VOL_DN  &kp LEFT   &kp C_VOL_UP  &kp UP     &kp LEFT  &kp DOWN       &kp RIGHT       &kp LA(F4)
 &mkp LCLK          &mkp RCLK     &mkp MCLK                                                                                  &mkp LCLK       &mkp RCLK        &mkp MCLK
-&mkp MB4           &mkp MB5      &kp LG(TAB)     &kp LG(D)     &kp LCTRL                           &mkp MB4       &mkp MB5  &kp LG(TAB)     &kp LG(D)        &kp LCTRL
+&mkp MB4           &mkp MB5      &kp LG(TAB)     &kp LG(D)     &kp LCTRL                           &mkp MB4  &mkp MB5       &kp LG(TAB)     &kp LG(D)        &kp LCTRL
             >;
         };
 
@@ -130,8 +130,8 @@
         SYSTEM_BT_LAYER {
             display-name = "system_bt_layer";
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3                   &bt BT_SEL 4
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &bt BT_CLR                     &bt BT_CLR_ALL                 &out OUT_TOG                   &to 0                          &to 1
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
 &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
          &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
