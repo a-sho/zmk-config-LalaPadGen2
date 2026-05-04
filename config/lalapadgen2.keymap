@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/zip_dynamic_scale.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -15,6 +16,42 @@
 &mt { quick-tap-ms = <200>; };
 
 &lt { quick-tap-ms = <200>; };
+
+&trackpad_listener_R {
+    input-processors = <&trackpad_key_behaviors_R>,
+                        <&zip_xy_scaler 1 5>,
+                        <&zip_scroll_scaler 1 12>,
+                        <&zip_dynamic_xy_scaler>,
+                        <&zip_dynamic_scroll_scaler>,
+                        <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+    lowspeedmode {
+        layers = <1>,<2>;
+        input-processors = <&trackpad_key_behaviors_R>,
+                            <&zip_xy_scaler 1 15>,
+                            <&zip_scroll_scaler 1 40>,
+                            <&zip_dynamic_xy_scaler>,
+                            <&zip_dynamic_scroll_scaler>,
+                            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+    };
+};
+
+&trackpad_listener_L {
+    input-processors = <&trackpad_key_behaviors_L>,
+                        <&zip_xy_scaler 1 5>,
+                        <&zip_scroll_scaler 1 12>,
+                        <&zip_dynamic_xy_scaler>,
+                        <&zip_dynamic_scroll_scaler>,
+                        <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+    lowspeedmode {
+        layers = <1>,<2>;
+        input-processors = <&trackpad_key_behaviors_L>,
+                            <&zip_xy_scaler 1 15>,
+                            <&zip_scroll_scaler 1 40>,
+                            <&zip_dynamic_xy_scaler>,
+                            <&zip_dynamic_scroll_scaler>,
+                            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+    };
+};
 
 / {
     behaviors {
