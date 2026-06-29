@@ -6,6 +6,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <scroll-snap.dtsi>
 
 #define DEFAULT_MAC_LAYER 0
 #define DEFAULT_WIN_LAYER 1
@@ -33,6 +34,7 @@
             <&trackpad_key_behaviors_R>,
             <&zip_xy_scaler 1 15>,
             <&zip_scroll_scaler 1 40>,
+            <&zip_scroll_snap>,
             <&zip_dynamic_xy_scaler>,
             <&zip_dynamic_scroll_scaler>;
     };
@@ -54,6 +56,7 @@
             <&trackpad_key_behaviors_L>,
             <&zip_xy_scaler 1 15>,
             <&zip_scroll_scaler 1 40>,
+            <&zip_scroll_snap>,
             <&zip_dynamic_xy_scaler>,
             <&zip_dynamic_scroll_scaler>;
     };
