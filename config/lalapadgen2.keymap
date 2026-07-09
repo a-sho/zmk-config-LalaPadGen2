@@ -1,12 +1,12 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/zip_dynamic_scale.h>
 #include <dt-bindings/zmk/input_transform.h>
+#include <scroll-snap.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <scroll-snap.dtsi>
 
 #define DEFAULT_MAC_LAYER 0
 #define DEFAULT_WIN_LAYER 1
@@ -137,13 +137,13 @@
         DEFAULT_WIN_LAYER {
             display-name = "Default_for_Win";
             bindings = <
-&kp Q              &kp W         &kp E           &kp R         &kp T                                  &kp Y     &kp U          &kp I           &kp O       &kp P
-&kp A              &kp S         &kp D           &kp F         &kp G                                  &kp H     &kp J          &kp K           &kp L       &mt2 EQUAL MINUS
-&mt2 LEFT_SHIFT Z  &kp X         &kp C           &kp V         &kp B                                  &kp N     &kp M          &kp COMMA       &kp PERIOD  &mt2 RIGHT_SHIFT SLASH
-&kp LEFT_WIN       &kp LEFT_ALT  &kp LANGUAGE_1  &kp LCTRL     &mo 2         &kp SPACE     &kp ENTER  &mo 3     &kp BACKSPACE  &kp LANGUAGE_2  &kp DEL     &kp BACKSLASH
-                   &kp C_MUTE    &kp LG(RIGHT)   &kp C_VOL_DN  &kp LG(LEFT)  &kp C_VOL_UP  &kp UP     &kp LEFT  &kp DOWN       &kp RIGHT       &kp LA(F4)
-&mkp LCLK          &mkp RCLK     &mkp MCLK                                                                                     &mkp LCLK       &mkp RCLK   &mkp MCLK
-&mkp MB4           &mkp MB5      &kp LG(TAB)     &kp LG(D)     &kp LCTRL                              &mkp MB4  &mkp MB5       &kp LG(TAB)     &kp LG(D)   &kp LCTRL
+&kp Q              &kp W         &kp E                       &kp R         &kp T                                  &kp Y     &kp U          &kp I        &kp O       &kp P
+&kp A              &kp S         &kp D                       &kp F         &kp G                                  &kp H     &kp J          &kp K        &kp L       &mt2 EQUAL MINUS
+&mt2 LEFT_SHIFT Z  &kp X         &kp C                       &kp V         &kp B                                  &kp N     &kp M          &kp COMMA    &kp PERIOD  &mt2 RIGHT_SHIFT SLASH
+&kp LEFT_WIN       &kp LEFT_ALT  &mt2 LANGUAGE_2 LANGUAGE_1  &kp LCTRL     &mo 2         &kp SPACE     &kp ENTER  &mo 3     &kp BACKSPACE  &trans       &kp DEL     &kp BACKSLASH
+                   &kp C_MUTE    &kp LG(RIGHT)               &kp C_VOL_DN  &kp LG(LEFT)  &kp C_VOL_UP  &kp UP     &kp LEFT  &kp DOWN       &kp RIGHT    &kp LA(F4)
+&mkp LCLK          &mkp RCLK     &mkp MCLK                                                                                                 &mkp LCLK    &mkp RCLK   &mkp MCLK
+&mkp MB4           &mkp MB5      &kp LG(TAB)                 &kp LG(D)     &kp LCTRL                              &mkp MB4  &mkp MB5       &kp LG(TAB)  &kp LG(D)   &kp LCTRL
             >;
         };
 
